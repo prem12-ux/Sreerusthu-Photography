@@ -713,21 +713,21 @@ h3 {
 	letter-spacing: 2px;
 	font-weight: 400;
 	margin-bottom: 4px;
-	 text-shadow: 2px 2px #ff0000;
+	 text-shadow: 2px 2px #000000;
 }
 
 @media (max-width:767px) {
 	.slider_area .single_slider .slider_text h3 {
 		font-size: 33px;
 		letter-spacing: 3px;
-			 text-shadow: 2px 2px #ff0000;
+			 text-shadow: 2px 2px #000000;
 	}
 }
 
 @media (min-width:768px) and (max-width:991px) {
 	.slider_area .single_slider .slider_text h3 {
 		font-size: 30px;
-			 text-shadow: 2px 2px #ff0000;
+			 text-shadow: 2px 2px #000000;
 	}
 }
 
@@ -735,7 +735,7 @@ h3 {
 	.slider_area .single_slider .slider_text h3 {
 		font-size: 35px;
 		letter-spacing: 3px;
-		 text-shadow: 2px 2px #ff0000;
+		 text-shadow: 2px 2px #000000;
 	}
 }
 
@@ -750,14 +750,14 @@ h3 {
 @media (min-width:992px) and (max-width:1200px) {
 	.slider_area .single_slider .slider_text p {
 		font-size: 16px ;
-		 text-shadow: 2px 2px #ff0000;
+		 text-shadow: 2px 2px #000000;
 	}
 }
 
 @media (max-width:767px) {
 	.slider_area .single_slider .slider_text p {
 		font-size: 16px;
-			 text-shadow: 2px 2px #ff0000;;
+			 text-shadow: 2px 2px #000000;
 	}
 }
 
