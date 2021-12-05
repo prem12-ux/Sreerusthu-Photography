@@ -531,7 +531,7 @@ Copyright &copy;<script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728
 
 <script src="css/bootstarp/bootstrap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.4.8/swiper-bundle.min.js"></script>
-
+<script src="js/jquery.validate.min.js"></script>
 <script src="js/Simple-Slider.js"></script>
 <script src="js/vendor/modernizr-3.5.0.min.js"></script>
 <script src="js/vendor/jquery-1.12.4.min.js"></script>
@@ -574,38 +574,49 @@ Copyright &copy;<script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728
         });
     </script>
 
-<script>
-    function sendemail() {
-        var name = $('#Name').val();
-        var email = $('#Email').val();
-        var message = $('#message').val();
-        var sub = $('#subject').val();
+<!-- <script> -->
+//     function sendemail() {
+//         var name = $('#Name').val();
+//         var email = $('#Email').val();
+//         var message = $('#message').val();
+//         var sub = $('#subject').val();
 
-        var Body = 'Name: ' + name + '<br>Email: ' + email + '<br>Message: ' + message + '<br>sub:'+sub ;
-        Email.send({
-            Host: "smtp.elasticemail.com",
-            Port: 2525,
-            Username : "pranavteja10@gmail.com",
-            Password : "724CCB1B94393930766884615D73E8962DDC",
-            To : 'pranav_mcr@srkrec.edu.in',
-            From : "pranavteja10@gmail.com",
-            Subject : "subject",
-            Body : Body,
-        }).then(
-            message => {
-                //console.log (message);
-                if (message == 'OK') {
-                    // window.location.replace("thankyou.html")
-                    alert("mail sent successfully")
-                }
-                else {
-                     console.error(message);
-                    // window.location.replace("error.html")
-                    alert("mail not sent successfully")
-                }
-            }
-        );
-    }
+//         var Body = 'Name: ' + name + '<br>Email: ' + email + '<br>Message: ' + message + '<br>sub:'+sub ;
+//         Email.send({
+//             Host: "smtp.elasticemail.com",
+//             Port: 2525,
+//             Username : "pranavteja10@gmail.com",
+//             Password : "724CCB1B94393930766884615D73E8962DDC",
+//             To : 'pranav_mcr@srkrec.edu.in',
+//             From : "pranavteja10@gmail.com",
+//             Subject : "subject",
+//             Body : Body,
+//         }).then(
+//             message => {
+//                 //console.log (message);
+//                 if (message == 'OK') {
+//                     // window.location.replace("thankyou.html")
+//                     alert("mail sent successfully")
+//                 }
+//                 else {
+//                      console.error(message);
+//                     // window.location.replace("error.html")
+//                     alert("mail not sent successfully")
+//                 }
+//             }
+//         );
+//     }
+// </script>
+<script>
+(function($){
+        "use strict";
+			$('#whatsAppAnyForm').appPlugin( 
+				{
+					whatsappPhone: '+918885814522', // Your Whatsapp Number, on which you want to send message.
+					submissionMessage: 'You have been redirected to the WhatsApp to submit the message. Thank you.' // form submission message
+				});	
+})(jQuery); 
+            
 </script>
 
 <script defer="" src="../../beacon.min.js" data-cf-beacon='{"rayId":"68a691fa4971e2e1","token":"cd0b4b3a733644fc843ef0b185f98241","version":"2021.8.1","si":10}'></script>
