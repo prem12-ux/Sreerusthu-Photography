@@ -1,5 +1,4 @@
 
-
 (function ( $ ) {
  "use strict";
     $.fn.appPlugin = function(options) 
