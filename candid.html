@@ -17,7 +17,6 @@
 <!-- 	src="https://smtpjs.com/v3/smtp.js"> -->
 	<script src="whatsappfrom.js"></script>
 <!-- <script 
-
 </script> -->
 <!-- <script src="/js/index.js"></script> -->
 </head>
@@ -155,7 +154,8 @@
         <h2 class="contact-title">Contact us</h2>
         </div>
     <div class="col-lg-8">
-        <form class="form-contact contact_form" action="" method="post" id="whatsappmsg" novalidate="">
+        <!-- <form class="form-contact contact_form" action="" method="post" id="whatsappmsg" novalidate=""> -->
+     <form id="whatsAppAnyForm" class="form-contact contact_form" action="" method="POST" data-title="WhatsApp Demo Contact Form" novalidate></form>
         <div class="row">
         <div class="col-12">
         <div class="form-group">
@@ -181,7 +181,7 @@
         </div>
         </div>
         <div class="form-group mt-3">
-        <button type="submit"id="whatsappFormSubmit" class="button button-contactForm boxed-btn">Send message</button>
+        <button type="submit"id="whatsappFormSubmit"class="button button-contactForm boxed-btn">Send message</button>
         <!-- <input type="button" value="Send Email" onclick="sendEmail()"/> -->
         </div>
         </form>
@@ -262,8 +262,6 @@ rooms and Suites</h3>
 </div>
 </div>
 </div>
-
-
 <div class="features_room">
 <div class="container">
 <div class="row">
@@ -326,8 +324,6 @@ rooms and Suites</h3>
 </div>
 </div>
 </div>
-
-
 <div class="forQuery">
 <div class="container">
 <div class="row">
@@ -350,8 +346,6 @@ rooms and Suites</h3>
 </div>
 </div>
 </div>
-
-
 <div class="instragram_area">
 <div class="single_instagram">
 <img src="img/instragram/x1.png.pagespeed.ic.NgY1J82XHr.jpg" alt="">
@@ -394,8 +388,6 @@ rooms and Suites</h3>
 </div>
 </div>
 </div>
-
-
 <footer class="footer">
 <div class="footer_top">
 <div class="container">
@@ -453,9 +445,7 @@ Newsletter
 <div class="row">
 <div class="col-xl-8 col-md-7 col-lg-9">
 <p class="copy_right">
-
 Copyright &copy;<script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="../../index.htm" target="_blank">Colorlib</a>
-
 </p>
 </div>
 <div class="col-xl-4 col-md-5 col-lg-3">
@@ -483,7 +473,6 @@ Copyright &copy;<script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728
 </div>
 </div>
 </footer>
-
 <form id="test-form" class="white-popup-block mfp-hide">
 <div class="popup_box ">
 <div class="popup_inner">
@@ -582,7 +571,6 @@ Copyright &copy;<script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728
 //         var email = $('#Email').val();
 //         var message = $('#message').val();
 //         var sub = $('#subject').val();
-
 //         var Body = 'Name: ' + name + '<br>Email: ' + email + '<br>Message: ' + message + '<br>sub:'+sub ;
 //         Email.send({
 //             Host: "smtp.elasticemail.com",
@@ -610,17 +598,15 @@ Copyright &copy;<script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728
 //     } -->
 
 <script>
-(function($whatsappmsg){
-        "use strict";
-			$('#whatsAppAnyForm').appPlugin( 
-				{
-					whatsappPhone: '+918885814522', // Your Whatsapp Number, on which you want to send message.
-					submissionMessage: 'You have been redirected to the WhatsApp to submit the message. Thank you.' // form submission message
-				});	
-})(jQuery); 
-            
-</script>
-
+    (function($){
+            "use strict";
+                $('#whatsAppAnyForm').appPlugin( 
+                    {
+                        whatsappPhone: '+918885814522', // Your Whatsapp Number, on which you want to send message.
+                        submissionMessage: 'You have been redirected to the WhatsApp to submit the message. Thank you.' // form submission message
+                    });	
+    })(jQuery);
+    </script>
 <script defer="" src="../../beacon.min.js" data-cf-beacon='{"rayId":"68a691fa4971e2e1","token":"cd0b4b3a733644fc843ef0b185f98241","version":"2021.8.1","si":10}'></script>
 </body>
 
