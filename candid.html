@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html class="no-js" lang="zxx">
 <head>
@@ -8,9 +9,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <link rel="shortcut icon" type="image/x-icon" href="img/xfavicon.png.pagespeed.ic.xjuSQ5i6l5.png">
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script src="js/whatsappfrom.js"></script>
- <script src="js/jquery.validate.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
 
 <link rel="stylesheet" href="css/A.bootstrap.min.css owl.carousel.min.css magnific-popup.css font-awesome.min.css themify-icons.css nice-select.css flaticon.css gijgo.css animate.css slicknav.css,Mcc.ZRMXTgu8XE.css.pagespeed.css">
 <link rel="stylesheet" href="css/A.style.css.pagespeed.cf.eJFkA6g_Dn.css">
@@ -18,10 +19,6 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.4.8/swiper-bundle.min.css">
 <!-- 	src="https://smtpjs.com/v3/smtp.js"> -->
 	
-	
-<!-- <script 
-</script> -->
-<!-- <script src="/js/index.js"></script> -->
 </head>
 <body>
 <!--[if lte IE 9]>
@@ -156,9 +153,10 @@
         <div class="col-12">
         <h2 class="contact-title">Contact us</h2>
         </div>
+    </div>
     <div class="col-lg-8">
         <!-- <form class="form-contact contact_form" action="" method="post" id="whatsappmsg" novalidate=""> -->
-     <form id="whatsAppAnyForm" class="form-contact contact_form" action="" method="POST" data-title="WhatsApp Demo Contact Form" novalidate></form>
+     <form  class="form-contact contact_form" >
         <div class="row">
         <div class="col-12">
         <div class="form-group">
@@ -182,346 +180,39 @@
         <input class="form-control" name="subject" id="subject" type="text" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Subject'" placeholder="Enter Subject">
         </div>
         </div>
-        </div>
+    
         <div class="form-group mt-3">
-        <button type="submit"id="whatsappFormSubmit"class="button button-contactForm boxed-btn">Send message</button>
+        <button type="submit"  onclick="gotowhatsapp()" class="button button-contactForm boxed-btn">Send message</button>
         <!-- <input type="button" value="Send Email" onclick="sendEmail()"/> -->
         </div>
         </form>
-        <div class="col-lg-3 offset-lg-1">
-            <div class="media contact-info">
-            <span class="contact-info__icon"><i class="ti-home"></i></span>
-            <div class="media-body">
-            <h3>Sreerasthu-Photography.</h3>
-            <p>Srikakulam</p>
-            </div>
-            </div>
-            <div class="media contact-info">
-            <span class="contact-info__icon"><i class="ti-tablet"></i></span>
-            <div class="media-body">
-            <h3>123456789</h3>
-            <p>Mon to Fri 9am to 6pm</p>
-            </div>
-            </div>
-            <div class="media contact-info">
-            <span class="contact-info__icon"><i class="ti-email"></i></span>
-            <div class="media-body">
-            <h3><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="ea999f9a9a85989eaa8985868598868388c4898587">[email&#160;protected]</a></h3>
-            <p>Send us your query anytime!</p>
-            </div>
-            </div>
-            </div>
-            </div>
-            </div>
-           
-            
-  <!----   
-<div class="row">
-<div class="col-xl-4 col-md-4">
-<div class="single_offers">
-<div class="about_thumb">
-<img src="img/offers/x1.png.pagespeed.ic.4okqSRHt4X.jpg" alt="">
-</div>
-<h3>Up to 35% savings on Club <br>
-rooms and Suites</h3>
-<ul>
-<li>Luxaries condition</li>
-<li>3 Adults & 2 Children size</li>
-<li>Sea view side</li>
-</ul>
-<a href="#" class="book_now">book now</a>
-</div>
-</div>
-<div class="col-xl-4 col-md-4">
-<div class="single_offers">
-<div class="about_thumb">
-<img src="img/offers/x2.png.pagespeed.ic.rtQrCuzgqA.jpg" alt="">
-</div>
-<h3>Up to 35% savings on Club <br>
-rooms and Suites</h3>
-<ul>
-<li>Luxaries condition</li>
-<li>3 Adults & 2 Children size</li>
-<li>Sea view side</li>
-</ul>
-<a href="#" class="book_now">book now</a>
-</div>
-</div>
-<div class="col-xl-4 col-md-4">
-<div class="single_offers">
-<div class="about_thumb">
-<img src="img/offers/x3.png.pagespeed.ic.2htivrGylN.jpg" alt="">
-</div>
-<h3>Up to 35% savings on Club <br>
-rooms and Suites</h3>
-<ul>
-<li>Luxaries condition</li>
-<li>3 Adults & 2 Children size</li>
-<li>Sea view side</li>
-</ul>
-<a href="#" class="book_now">book now</a>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="features_room">
-<div class="container">
-<div class="row">
-<div class="col-xl-12">
-<div class="section_title text-center mb-100">
-<span>Featured Rooms</span>
-<h3>Choose a Better Room</h3>
-</div>
-</div>
-</div>
-</div>
-<div class="rooms_here">
-<div class="single_rooms">
-<div class="room_thumb">
-<img src="img/rooms/x1.png.pagespeed.ic.VAtFRxVlya.jpg" alt="">
-<div class="room_heading d-flex justify-content-between align-items-center">
-<div class="room_heading_inner">
-<span>From $250/night</span>
-<h3>Superior Room</h3>
-</div>
-<a href="#" class="line-button">book now</a>
-</div>
-</div>
-</div>
-<div class="single_rooms">
-<div class="room_thumb">
-<img src="img/rooms/x2.png.pagespeed.ic._XqtvYJ898.jpg" alt="">
-<div class="room_heading d-flex justify-content-between align-items-center">
-<div class="room_heading_inner">
-<span>From $250/night</span>
-<h3>Deluxe Room</h3>
-</div>
-<a href="#" class="line-button">book now</a>
-</div>
-</div>
-</div>
-<div class="single_rooms">
-<div class="room_thumb">
-<img src="img/rooms/x3.png.pagespeed.ic.27fT6vv61n.jpg" alt="">
-<div class="room_heading d-flex justify-content-between align-items-center">
-<div class="room_heading_inner">
-<span>From $250/night</span>
-<h3>Signature Room</h3>
-</div>
-<a href="#" class="line-button">book now</a>
-</div>
-</div>
-</div>
-<div class="single_rooms">
-<div class="room_thumb">
-<img src="img/rooms/x4.png.pagespeed.ic.LP5ls-fR4c.jpg" alt="">
-<div class="room_heading d-flex justify-content-between align-items-center">
-<div class="room_heading_inner">
-<span>From $250/night</span>
-<h3>Couple Room</h3>
-</div>
-<a href="#" class="line-button">book now</a>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="forQuery">
-<div class="container">
-<div class="row">
-<div class="col-xl-10 offset-xl-1 col-md-12">
-<div class="Query_border">
-<div class="row align-items-center justify-content-center">
-<div class="col-xl-6 col-md-6">
-<div class="Query_text">
-<p>For Reservation 0r Query?</p>
-</div>
-</div>
-<div class="col-xl-6 col-md-6">
-<div class="phone_num">
-<a href="#" class="mobile_no">+10 576 377 4789</a>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="instragram_area">
-<div class="single_instagram">
-<img src="img/instragram/x1.png.pagespeed.ic.NgY1J82XHr.jpg" alt="">
-<div class="ovrelay">
-<a href="#">
-<i class="fa fa-instagram"></i>
-</a>
-</div>
-</div>
-<div class="single_instagram">
-<img src="img/instragram/x2.png.pagespeed.ic.cOUGhidPCu.jpg" alt="">
-<div class="ovrelay">
-<a href="#">
-<i class="fa fa-instagram"></i>
-</a>
-</div>
-</div>
-<div class="single_instagram">
-<img src="img/instragram/x3.png.pagespeed.ic.gtc7zs15GV.jpg" alt="">
-<div class="ovrelay">
-<a href="#">
-<i class="fa fa-instagram"></i>
-</a>
-</div>
-</div>
-<div class="single_instagram">
-<img src="img/instragram/x4.png.pagespeed.ic.xFrLy4MFz2.jpg" alt="">
-<div class="ovrelay">
-<a href="#">
-<i class="fa fa-instagram"></i>
-</a>
-</div>
-</div>
-<div class="single_instagram">
-<img src="img/instragram/x5.png.pagespeed.ic.4GV2ChqQm7.jpg" alt="">
-<div class="ovrelay">
-<a href="#">
-<i class="fa fa-instagram"></i>
-</a>
-</div>
-</div>
-</div>
-<footer class="footer">
-<div class="footer_top">
-<div class="container">
-<div class="row">
-<div class="col-xl-3 col-md-6 col-lg-3">
-<div class="footer_widget">
-<h3 class="footer_title">
-address
-</h3>
-<p class="footer_text"> 200, Green road, Mongla, <br>
-New Yor City USA</p>
-<a href="#" class="line-button">Get Direction</a>
-</div>
-</div>
-<div class="col-xl-3 col-md-6 col-lg-3">
-<div class="footer_widget">
-<h3 class="footer_title">
-Reservation
-</h3>
-<p class="footer_text">+10 367 267 2678 <br>
-<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="beccdbcddbccc8dfcad7d1d0fed3d1d0cadfd0df90ddd1d3">[email&#160;protected]</a></p>
-</div>
-</div>
-<div class="col-xl-2 col-md-6 col-lg-2">
-<div class="footer_widget">
-<h3 class="footer_title">
-Navigation
-</h3>
-<ul>
-<li><a href="#">Home</a></li>
-<li><a href="#">Rooms</a></li>
-<li><a href="#">About</a></li>
-<li><a href="#">News</a></li>
-</ul>
-</div>
-</div>
-<div class="col-xl-4 col-md-6 col-lg-4">
-<div class="footer_widget">
-<h3 class="footer_title">
-Newsletter
-</h3>
-<form action="#" class="newsletter_form">
-<input type="text" placeholder="Enter your mail">
-<button type="submit">Sign Up</button>
-</form>
-<p class="newsletter_text">Subscribe newsletter to get updates</p>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="copy-right_text">
-<div class="container">
-<div class="footer_border"></div>
-<div class="row">
-<div class="col-xl-8 col-md-7 col-lg-9">
-<p class="copy_right">
-Copyright &copy;<script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="../../index.htm" target="_blank">Colorlib</a>
-</p>
-</div>
-<div class="col-xl-4 col-md-5 col-lg-3">
-<div class="socail_links">
-<ul>
-<li>
-<a href="#">
-<i class="fa fa-facebook-square"></i>
-</a>
-</li>
-<li>
-<a href="#">
-<i class="fa fa-twitter"></i>
-</a>
-</li>
-<li>
-<a href="#">
-<i class="fa fa-instagram"></i>
-</a>
-</li>
-</ul>
-</div>
-</div>
-</div>
-</div>
-</div>
-</footer>
-<form id="test-form" class="white-popup-block mfp-hide">
-<div class="popup_box ">
-<div class="popup_inner">
-<h3>Check Availability</h3>
-<form action="#">
-<div class="row">
-<div class="col-xl-6">
-<input id="datepicker" placeholder="Check in date">
-</div>
-<div class="col-xl-6">
-<input id="datepicker2" placeholder="Check out date">
-</div>
-<div class="col-xl-6">
-<select class="form-select wide" id="default-select" class="">
-<option data-display="Adult">1</option>
-<option value="1">2</option>
-<option value="2">3</option>
-<option value="3">4</option>
-</select>
-</div>
-<div class="col-xl-6">
-<select class="form-select wide" id="default-select" class="">
-<option data-display="Children">1</option>
-<option value="1">2</option>
-<option value="2">3</option>
-<option value="3">4</option>
-</select>
-</div>
-<div class="col-xl-12">
-<select class="form-select wide" id="default-select" class="">
-<option data-display="Room type">Room type</option>
-<option value="1">Laxaries Rooms</option>
-<option value="2">Deluxe Room</option>
-<option value="3">Signature Room</option>
-<option value="4">Couple Room</option>
-</select>
-</div>
-<div class="col-xl-12">
-<button type="submit" class="boxed-btn3">Check Availability</button>
-</div>
-</div>
-</form>
-</div>
-</div>
-</form>
--->
+    </div>
+    <div class="col-lg-3 offset-lg-1">
+        <div class="media contact-info">
+        <span class="contact-info__icon"><i class="ti-home"></i></span>
+        <div class="media-body">
+        <h3>Sreerasthu-Photography.</h3>
+        <p>Srikakulam</p>
+        </div>
+        </div>
+        <div class="media contact-info">
+        <span class="contact-info__icon"><i class="ti-tablet"></i></span>
+        <div class="media-body">
+        <h3>8885814522</h3>
+        <p>Mon to Fri 9am to 6pm</p>
+        </div>
+        </div>
+        <div class="media contact-info">
+        <span class="contact-info__icon"><i class="ti-email"></i></span>
+        <div class="media-body">
+        <h3><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="ea999f9a9a85989eaa8985868598868388c4898587">[email&#160;protected]</a></h3>
+        <p>Send us your query anytime!</p>
+        </div>
+        </div>
+        </div>
+        </div>
+    </div>
+
 
 <script src="css/bootstarp/bootstrap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.4.8/swiper-bundle.min.js"></script>
@@ -552,24 +243,28 @@ Copyright &copy;<script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728
 <script>eval(mod_pagespeed_pOjQGGv5$J);</script>
 <script>eval(mod_pagespeed_XhIXN15wVT);</script>
 <script>eval(mod_pagespeed_hh3mLC78xY);</script>
-<script>
-        $('#datepicker').datepicker({
-            iconsLibrary: 'fontawesome',
-            icons: {
-             rightIcon: '<span class="fa fa-caret-down"></span>'
-         }
-        });
-        $('#datepicker2').datepicker({
-            iconsLibrary: 'fontawesome',
-            icons: {
-             rightIcon: '<span class="fa fa-caret-down"></span>'
-         }
 
-        });
-    </script>
+    <script>
+        function gotowhatsapp() {
+            
+            var message = document.getElementById("message").value;
+            var name = document.getElementById("Name").value;
+            var email = document.getElementById("Email").value;
+            var subject = document.getElementById("subject").value;
+        
+            var url = "https://wa.me/+918885814522?text=" 
+            + "Message: " + message + "%0a"
+            + "Name: " + name + "%0a"
+            + "Email: " + email  + "%0a"
+            + "Subject: " + subject; 
+        
+            window.open(url, '_blank').focus();
+        }
+        </script>
+    <!--     
 
-<!-- 
-//     function sendemail() {
+ 
+ //     function sendemail() {
 //         var name = $('#Name').val();
 //         var email = $('#Email').val();
 //         var message = $('#message').val();
@@ -598,22 +293,22 @@ Copyright &copy;<script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728
 //                 }
 //             }
 //         );
-//     } -->
+//     } --> 
 
-<script>
-    (function($){
-            "use strict";
-                $('#whatsAppAnyForm').appPlugin( 
-                    {
-                        whatsappPhone: '+918885814522', // Your Whatsapp Number, on which you want to send message.
-                        submissionMessage: 'You have been redirected to the WhatsApp to submit the message. Thank you.' // form submission message
-                    });	
-    })(jQuery);
-    </script>
+
 <script defer="" src="../../beacon.min.js" data-cf-beacon='{"rayId":"68a691fa4971e2e1","token":"cd0b4b3a733644fc843ef0b185f98241","version":"2021.8.1","si":10}'></script>
 </body>
 
-
+<!-- 
+<script>
+    (function($){
+            "use strict";
+                $('#whatsAppAnyForm').appPlugin( {whatsappPhone: '+918885814522',
+                        submissionMessage: 'You have been redirected to the WhatsApp to submit the message. Thank you.' 
+                    });	
+    })(jQuery);
+    </script> -->
+ 
 
 
 
